@@ -1,0 +1,86 @@
+table, th, td {
+    border: 0px solid black;
+    border-collapse: collapse;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-image: url("/backgroundblue.jpg");
+	background-repeat: repeat;
+	color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+p {
+	padding-left:25px;
+	padding-right:50px;
+	line-height: 180%;
+}
+
+h2 {
+	padding-left: 25px;
+}
+h3 {
+	padding-left: 50px;
+}
+#cupp {
+	width:150px;
+	height:150px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top:25px;
+	padding-bottom:20px;
+}
+#wrap {
+	width:950px;
+	margin: 0 auto;
+}
+#content {
+	vertical-align: top;
+	padding-top: 10px;
+	padding-left: 15px;
+	text-align: center;
+	width:700px;
+}
+#sitemap {
+	color: #cccccc;
+
+	vertical-align:top;
+}
+#sitemapinside {
+	width:230px;
+	background-color: rgba(24, 107, 148, .6);
+}
+#toptitle {
+	text-align:right;
+	padding-right: 10px;
+}
+#updateimg {
+width:100px;height:100px;
+	padding-left:10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#updateblurb {
+	text-align:left;
+	vertical-align:top;
+	padding-top:10px;
+	padding-left:5px;
+}
+#updatebox {
+	background-color:rgba(24, 107, 148, .6);
+}
+#updatespace {
+	height: 25px;
+}
+.button {
+	background-color: rgba(24, 107, 148, .6);
+    padding: 15px 32px;
+	text-align: center;
+	margin: 4px 2px;
+	text-decoration:none;
+	color: #cccccc;
+	display: inline-block;
+}
