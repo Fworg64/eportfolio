@@ -5,7 +5,7 @@ table, th, td {
 }
 
 body {
-	background-image: url("/backgroundblue.jpg");
+	background-image: url("./backgroundblue.jpg");
 	background-repeat: repeat;
 	color: white;
 }
