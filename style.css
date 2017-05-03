@@ -7,7 +7,7 @@ table, th, td {
 body {
 	background-image: url("./backgroundblue.jpg");
 	background-repeat: repeat;
-	color: white;
+	color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,43 +19,63 @@ p {
 	line-height: 180%;
 }
 
+h1 {
+	font-weight: 700;
+	font-size: 36pt;
+	vertical-align:bottom;
+}
 h2 {
-	padding-left: 25px;
+	font-weight: 400;
+	font-size: 18pt;
 }
 h3 {
+	line-height: 180%;
+	font-weight: 700;
 	padding-left: 50px;
 }
-#cupp {
-	width:150px;
-	height:150px;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top:25px;
-	padding-bottom:20px;
+
+#topbannerspace {
+	background-color: #b0aead;
+	width: 100%;
+	height:5px;
 }
-#wrap {
-	width:950px;
+#banner {
+	background-color: #b0aead;
+	width: 100%;
+	padding: 0px;
 	margin: 0 auto;
+	text-align: center;
+}
+#bannertable {
+	text-align:center;
+	margin: 0 auto;
+	padding: 0px;
+}
+#bottombannerspace {
+	background-color: #b0aead;
+	width: 100%;
+	height:5px;
 }
 #content {
 	vertical-align: top;
-	padding-top: 10px;
-	padding-left: 15px;
+	margin-top: 10px;
 	text-align: center;
-	width:700px;
+	margin:0 auto;
+	width:950px;
+	background-color: #b0aead;
 }
-#sitemap {
-	color: #cccccc;
-
-	vertical-align:top;
+#contenttable {
+	width: 700px;
+	background-color: #b0aead;
+	margin: 0 auto;
+	text-align: center;
 }
-#sitemapinside {
-	width:230px;
-	background-color: rgba(24, 107, 148, .6);
-}
-#toptitle {
+#contenttitle {
+	padding-top: 30px;
+	padding-bottom: 10px;
 	text-align:right;
-	padding-right: 10px;
+	vertical-align:bottom;
+	color: #000000;
 }
 #updateimg {
 width:100px;height:100px;
@@ -75,12 +95,55 @@ width:100px;height:100px;
 #updatespace {
 	height: 25px;
 }
+#footer {
+	text-align: center;
+	padding-top:5px;
+	padding-bottom:13px;
+	color: #000000;
+}
 .button {
 	background-color: rgba(24, 107, 148, .6);
     padding: 15px 32px;
 	text-align: center;
 	margin: 4px 2px;
 	text-decoration:none;
-	color: #cccccc;
+	color: black;
 	display: inline-block;
 }
+.dropbtn {
+	background-color: rgba(24, 107, 148, .6);
+    padding: 15px 32px;
+	text-align: center;
+	margin: 4px 2px;
+	text-decoration:none;
+	color: black;
+	display: inline-block;
+}
+.button:hover .button:focus .dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+.dropdown {
+    position: static;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    /*overflow: auto;*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+	float:none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
