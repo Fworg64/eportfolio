@@ -15,22 +15,22 @@
 	<tr>
 		<td colspan="5"><img id ="cupandtitle" src="Bannerv1.png" alt="TcupDevelopment"></td>
 	</tr>
-	<tr style="width:700px">
-		<th><h2 ><a href=./index.html class="button">Home</a></h2></th>
-		<th><h2 ><a href=./Owner/ class="button">Owner</a></h2></th>
-	<div class="dropdown">
-		<th><h2 ><button onclick="dropdownmenu()" class="dropbtn">Projects</button></h2></th>
-			<div id="dropdowns" class="dropdown-content">
-				<a href=./Projects/NRMC.html>NASA Robotic Mining Competition</a>
-				<a href=./Projects/SoccerRobots.html>Soccer Robots</a>
-				<a href=./Projects/DuckPond.html>DuckPond</a>
-			</div>
-	</div>
-		<th><h2 ><a href=./About/ class="button">About</a></h2></th>
-		<th><h2 ><a href=./Other/Other.html class="button">Other</a></h2></th>
-	</tr>
-	<tr id="bottombannerspace"></tr>
 </table>
+<table><tr id="bottombannerspace"></tr></table>
+</div>
+<div class="container">
+	<a href=./index.html class="button">Home</a>
+	<a href=./Owner/ class="button">Owner</a>
+	<span class="dropdown">
+		<button onclick="dropdownmenu()" class="dropbtn">Projects</button>
+	</span>
+	<a href=./About/ class="button">About</a>
+	<a href=./Other/Other.html class="button">Other</a>
+</div>
+<div id="mydropdown" class="dropdown-content">
+	<a href=./Projects/NRMC.html>NASA Robotic Mining Competition</a>
+	<a href=./Projects/SoccerRobots.html>Soccer Robots</a>
+	<a href=./Projects/DuckPond.html>DuckPond</a>
 </div>
 <div id="content">
 	<table id="contenttable">
@@ -62,7 +62,7 @@
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function dropdownmenu() {
-    document.getElementById("dropdowns").classList.toggle("show");
+    document.getElementById("mydropdown").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
