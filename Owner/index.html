@@ -1,34 +1,39 @@
  <!DOCTYPE html>
  <link href="../reset.css" type="text/css" rel="stylesheet"/>
 <link rel="stylesheet" href="../style.css">
-<link rel="shortcut icon" href="favicon.ico" />
+<link rel="shortcut icon" href="../favicon.ico" />
 <html>
 <head>
 <title>TcupDevelopment.com</title>
 </head>
 <body>
-<div id="wrap">
-
 <div id ="banner">
 <table id ="bannertable">
 	<tr id="topbannerspace"></tr>
 	<tr>
 		<td colspan="5"><img id ="cupandtitle" src="../Bannerv1.png" alt="TcupDevelopment"></td>
 	</tr>
-	<tr style="width:700px">
-		<th><h2 ><a href=../index.html class="button">Home</a></h2></th>
-		<th><h2 ><a href=../Owner/ class="button">Owner</a></h2></th>
-		<th><h2 ><a href=../Projects/Projects.html class="button">Projects</a></h2></th>
-		<th><h2 ><a href=../About/ class="button">About</a></h2></th>
-		<th><h2 ><a href=../Other/Other.html class="button">Other</a></h2></th>
-	</tr>
-	<tr id="bottombannerspace"></tr>
 </table>
+<table><tr id="bottombannerspace"></tr></table>
+</div>
+<div class="container">
+	<a href=../index.html class="button">Home</a>
+	<a href=../Owner/ class="button">Owner</a>
+	<span class="dropdown">
+		<button onclick="dropdownmenu()" class="dropbtn">Projects</button>
+	</span>
+	<a href=../About/ class="button">About</a>
+	<a href=../Other/Other.html class="button">Other</a>
+</div>
+<div id="mydropdown" class="dropdown-content">
+	<span><a href=../Projects/NRMC.html>NASA Robotic Mining Competition</a></span>
+	<span><a href=../Projects/SoccerRobots.html>Soccer Robots</a></span>
+	<span><a href=../DuckPond/>DuckPond</a></span>
 </div>
 <div id="content">
 	<table id="contenttable">
 		<tr>
-			<th><img id ="selfie" src="../snapshot2cropped.jpg" alt="selfie" style="height:150px; padding-bottom:10px;"></th>
+			<th><img id ="selfie" src="../snapshot2cropped.jpg" alt="selfie" style="padding-top:20px;height:150px; padding-bottom:10px;"></th>
 			<th id="contenttitle"><h1>Austin F. Oltmanns</h1></th>
 		</tr>
 		<tr id="updatebox">
@@ -43,7 +48,7 @@ through exploration in the fields of alternative energy, embedded systems, and g
 <h3>Personal Bio</h3>
 <p>I am Austin F. Oltmanns and I currently study Electrical Engineering at NDSU. I plan on pursing graduate school after the completion of my program. My areas of focus include signal processing, computer vision, and power systems.
 Currently I am heavily involved with the NASA Robotic Mining Competition and am developing the obstacle avoidance system. This project is detailed in the NRMC section of the projects part of this website. Previosly I developed a mobile game which is available on iOS and Android, also detailed in the project section.
-Future work I plan on doing will involve control systems for the NRMC robot. </p>
+Future work I plan on doing will involve control systems for the NRMC robot.</br> For those interested, my resume may be found <a href="../resume2017v5.pdf">here</a></p>
 </td></tr>
 		<tr id="updatespace"></tr>
 		<tr><td id="footer" colspan="2">
@@ -51,5 +56,27 @@ Future work I plan on doing will involve control systems for the NRMC robot. </p
 		</td></tr>
 	</table>
 </div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function dropdownmenu() {
+    document.getElementById("mydropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </body>
 </html> 
